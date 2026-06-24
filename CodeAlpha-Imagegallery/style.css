@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:radial-gradient(circle at top,#1e293b,#0f172a);
+    color:white;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    color:#cbd5e1;
+    margin-top:10px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding-bottom:60px;
+}
+
+/* FILTERS */
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.filter-btn{
+    padding:10px 22px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    background:rgba(255,255,255,0.08);
+    color:white;
+    transition:0.3s;
+}
+
+.filter-btn:hover{
+    background:#3b82f6;
+    transform:translateY(-2px);
+}
+
+.filter-btn.active{
+    background:#3b82f6;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:18px;
+}
+
+.gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:16px;
+    cursor:pointer;
+    transition:0.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.95);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.lightbox-img{
+    max-width:85%;
+    max-height:85%;
+    border-radius:16px;
+    animation:pop 0.25s ease;
+}
+
+@keyframes pop{
+    from{transform:scale(0.8);opacity:0;}
+    to{transform:scale(1);opacity:1;}
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:50px;
+    cursor:pointer;
+}
+
+.prev,.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.prev:hover,.next:hover{
+    background:#3b82f6;
+}
+
+.prev{left:25px;}
+.next{right:25px;}

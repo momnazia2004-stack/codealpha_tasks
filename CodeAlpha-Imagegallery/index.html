@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Modern Image Gallery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Modern Gallery</h1>
+    <p>Explore Nature • Animals • Cities in a premium UI</p>
+</header>
+
+<div class="container">
+
+    <!-- FILTERS -->
+    <div class="filters">
+
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+        <button class="filter-btn" data-filter="cities">Cities</button>
+
+    </div>
+
+    <!-- GALLERY (6 EACH CATEGORY) -->
+    <div class="gallery">
+
+        <!-- ANIMALS (6) -->
+        <img src="images/animal1.jpg" class="animals">
+        <img src="images/animal2.jpg" class="animals">
+        <img src="images/animal3.jpg" class="animals">
+        <img src="images/animal4.jpg" class="animals">
+        <img src="images/animal5.jpg" class="animals">
+        <img src="images/animal6.jpg" class="animals">
+
+        <!-- NATURE (6) -->
+        <img src="images/nature1.jpg" class="nature">
+        <img src="images/nature2.jpg" class="nature">
+        <img src="images/nature3.jpg" class="nature">
+        <img src="images/nature4.jpg" class="nature">
+        <img src="images/nature5.jpg" class="nature">
+        <img src="images/nature6.jpg" class="nature">
+
+        <!-- CITIES (6) -->
+        <img src="images/city1.jpg" class="cities">
+        <img src="images/city2.jpg" class="cities">
+        <img src="images/city3.jpg" class="cities">
+        <img src="images/city4.jpg" class="cities">
+        <img src="images/city5.jpg" class="cities">
+        <img src="images/city6.jpg" class="cities">
+
+    </div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox">
+    <span class="close">&times;</span>
+    <button class="prev">&#10094;</button>
+    <img class="lightbox-img">
+    <button class="next">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
