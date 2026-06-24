@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h2>My Portfolio</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Hi, I'm a Frontend Developer</h1>
+    <p>I build responsive websites using HTML, CSS & JavaScript</p>
+    <a href="#projects">
+      <button type="button">View My Work</button>
+    </a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="grid-container">
+      <div class="project-box">
+        <h3>Building Simple, Clean, and Beautiful Websites</h3>
+        <p style="margin-top: 12px; color: var(--muted);">
+          I am a passionate frontend developer who loves turning ideas into real code. I focus on writing neat, clean code and making sure that every project looks great on computers, tablets, and phones. My main goal is to build sites that are fast, useful, and simple for people to navigate. I enjoy taking difficult programming challenges and breaking them down into simple web experiences.
+        </p>
+      </div>
+      
+      <div class="project-box">
+        <h3>What I Am Learning & Practicing</h3>
+        <p style="margin-top: 12px; color: var(--muted); line-height: 1.8;">
+          • Making websites fit all screen sizes (Responsive Design)<br>
+          • Writing clean HTML structures<br>
+          • Designing modern styles with CSS variables<br>
+          • Creating interactive features using JavaScript
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid-container">
+      
+      <div class="project-box">
+        <h3>Calculator</h3>
+        <p style="margin-top: 10px; color: var(--muted);">Built using HTML, CSS, JS</p>
+      </div>
+
+      <div class="project-box">
+        <h3>Image Gallery</h3>
+        <p style="margin-top: 10px; color: var(--muted);">Responsive gallery with lightbox features</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="project-box" style="text-align: center; max-width: 500px; margin: 0 auto;">
+      <p style="color: var(--muted);">Let's collaborate on something awesome.</p>
+      <p style="margin-top: 15px; font-weight: 600;">Email: momnazia@gmail.com</p>
+    </div>
+  </section>
+
+  <footer style="padding: 60px 4% 30px 4%;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; text-align: left; max-width: 1200px; margin: 0 auto; padding-bottom: 40px;">
+      
+      <div style="flex: 1; min-width: 250px;">
+        <h3 style="color: #ffffff; font-size: 18px; font-weight: 700; margin-bottom: 12px;">My Portfolio</h3>
+        <p style="color: var(--muted); font-size: 14px; max-width: 300px;">
+          Designing and building digital experiences with clean code and modern styles.
+        </p>
+      </div>
+
+      <div style="flex: 1; min-width: 150px;">
+        <h4 style="color: #ffffff; font-size: 14px; font-weight: 600; margin-bottom: 12px; letter-spacing: 0.5px; text-transform: uppercase;">Links</h4>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <a href="#home" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.3s;">Home</a>
+          <a href="#about" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.3s;">About</a>
+          <a href="#projects" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.3s;">Projects</a>
+        </div>
+      </div>
+
+      <div style="flex: 1; min-width: 150px;">
+        <h4 style="color: #ffffff; font-size: 14px; font-weight: 600; margin-bottom: 12px; letter-spacing: 0.5px; text-transform: uppercase;">Connect</h4>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <a href="https://github.com" target="_blank" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.3s;">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.3s;">LinkedIn</a>
+          <a href="mailto:momnazia2004@gmail.com" style="color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.3s;">Email Me</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 25px; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; font-size: 13px; color: var(--muted);">
+      <p>© 2026 MomnaZia. All rights reserved.</p>
+      <p>Handcrafted with HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
